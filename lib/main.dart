@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'calcualtor_screen.dart';
 
 void main() {
@@ -13,8 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Calculator',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(),
-      // home: const CalculatorScreen(),
+      theme: ThemeData.dark(), // chu de mau toi
+      home: const CalculatorScreen(),
     );
   }
 }
