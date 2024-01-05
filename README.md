@@ -1,45 +1,47 @@
-# Calculator App
+# Ứng dụng Danh sách Công việc
 
-Ứng dụng máy tính đơn giản viết bằng ngôn ngữ Flutter.
+Đây là một ứng dụng đơn giản sử dụng Flutter để quản lý danh sách công việc cá nhân. Ứng dụng có các trang chính sau:
 
-## Hướng dẫn cài đặt và chạy ứng dụng
+1. **Trang chủ:** Hiển thị một trang chủ với nền gradient từ màu xanh da trời nhạt đến hồng nhạt.
 
-### Yêu cầu hệ thống
-- Đảm bảo bạn đã cài đặt Flutter và Dart trên máy tính của bạn. Nếu chưa, bạn có thể tham khảo cách cài đặt tại [flutter.dev](https://flutter.dev/docs/get-started/install).
+2. **Danh sách công việc:** Cho phép người dùng thêm mới công việc, đánh dấu công việc đã hoàn thành và xóa công việc.
 
-### Bước 1: Sao chép dự án
-Sao chép dự án từ GitHub về máy tính của bạn bằng cách sử dụng lệnh sau:
-Bạn vào theo đường link github tôi đã để và copy đường dẫn 
-git clone https://github.com/jkay-kmm/calculator_flutter_app.git
-### Bước 2: Di chuyển thư mục vào dữ án 
-- cd calculator-app
-### Bước 3:  Cài đặt các dependencies
-Chạy lệnh sau để cài đặt tất cả các dependencies cần thiết:
-- flutter pub get
-### Bước 4 Chạy ứng dụng 
-- flutter run 
-### Sơ lược về app
-- Widget đầu vào
-tất cả các tiện ích đầu vào đều mở rộng StatefulWidget vì chúng cần phản hồi cử chỉ onTap.
+3. **Trang cá nhân:** Hiển thị một trang cá nhân với nền gradient giống như trang chủ.
 
-Nút số. Hiển thị nút số (như 1,2,3...) và xử lý cử chỉ onTap.
+## Cách triển khai
 
-Nút toán tử. Hiển thị nút toán tử (như +,-,*...) và xử lý cử chỉ onTap.
+Để triển khai ứng dụng trên thiết bị của bạn, bạn có thể làm theo các bước sau:
 
-Nút kết quả. Hiển thị nút lệnh (như rõ ràng, bằng nhau...) và xử lý cử chỉ onTap.
+### Yêu cầu
 
-- Widget đầu ra
-tất cả các tiện ích đầu ra đều được mở rộng StatelessWidget vì chúng chỉ đang hiển thị.
+- [Flutter SDK](https://flutter.dev/docs/get-started/install)
+- Trình quản lý gói [pub](https://dart.dev/tools/pub/cmd)
 
-Hiển thị kết quả. Hiển thị kết quả hiện tại và thay đổi hiển thị khi người dùng nhấn vào nút số.
+### Bước 1: Sao chép mã nguồn
 
-HistoryBlock. Hiển thị lịch sử tính toán và thay đổi hiển thị mỗi khi người dùng nhấn vào nút hợp lệ.
+Sao chép mã nguồn từ repository bằng cách sử dụng git:
 
-- Máy tínhTrang
-Máy tínhPage được mở rộng StatefulWidget và giữ Danh sách kết quả.
+```bash
+git clone https://github.com/your-username/todo_list_app.git
+cd todo_list_app
+orials,
+samples, guidance on mobile development, and a full API reference
 
-Máy tínhPage nhận mọi sự kiện onTap của tiện ích đầu vào, thực hiện phép tính logic cho những đầu vào này và quyết định nội dung sẽ hiển thị cho tiện ích đầu ra.
-###
-| Calculator Screen | History Screen |
-| --- | --- |
-| ![image](images/calculator.png) | ![history](images/history.png) |
+
+### Bước 2 :  Chạy lệnh sau 
+  --   flutter pub get
+### Bước 3 Chạy ứng dụng trên thiết bị hoặc máy ảo:
+  --  flutter run
+
+  Ứng dụng sẽ khởi chạy trên thiết bị của bạn.
+
+Cấu trúc mã nguồn
+* main.dart: Điểm vào của ứng dụng, khởi tạo ứng dụng Flutter.
+* home_page.dart: Mã nguồn cho trang chủ.
+* tasks_page.dart: Mã nguồn cho trang danh sách công việc.
+* profile_page.dart: Mã nguồn cho trang cá nhân.
+* README.md: Tài liệu hướng dẫn này.
+###Đóng góp
+Nếu bạn muốn đóng góp vào dự án, vui lòng tạo một pull request hoặc báo cáo vấn đề mới.
+
+Chúc bạn có những trải nghiệm tuyệt vời với ứng dụng của  tôi!
